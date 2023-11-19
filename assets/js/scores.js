@@ -16,7 +16,7 @@ function printHighscores() {
 
         // display on page
         var olEl = document.getElementById('highscores');
-        olEl.appendChild(liTag);
+        olEl.appendChild(listItem);
 
     }
 }
