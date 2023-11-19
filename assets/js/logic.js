@@ -102,6 +102,6 @@ function quizEnd() {
 
 
     //  final score
-    document.getElementById("finalScore").innerHTML = score;
+    document.getElementById("final-score").innerHTML = score;
 }
 
