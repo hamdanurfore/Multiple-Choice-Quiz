@@ -124,7 +124,7 @@ document.getElementById("submit").addEventListener("click", function() {
     
     highscores.push(highscore);
     localStorage.setItem("highscores",JSON.stringify(highscores));
-    window.location.href="highscore.html";
+    window.location.href="highscores.html";
     // localStorage.setItem('highscore', JSON.stringify(highscore));
     }
     );
