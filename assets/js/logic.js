@@ -86,5 +86,22 @@ function updateTimer() {
     }
     timerEl.textContent = time;
 
-
 }
+
+function quizEnd() {
+    clearInterval(timeInterval);
+    //  hiding questions and showing end screen
+    var endScreenEl = document.getElementById("end-screen");
+    endScreenEl.removeAttribute("class", "hide");
+    questionsEl.setAttribute("class", "hide");
+
+
+    //  removing feedback
+    feedbackEl = document.getElementById("feedback");
+    feedbackEl.parentNode.removeChild(feedbackEl);
+
+
+    //  final score
+    document.getElementById("finalScore").innerHTML = score;
+}
+
