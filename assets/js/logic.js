@@ -41,8 +41,6 @@ function displayQuestion() {
         choiceBtn.textContent = i + 1 + "." + choice;
         choicesEl.appendChild(choiceBtn);
         choiceBtn.onclick = questionClick;
-
-
     })
 }
 
@@ -68,7 +66,7 @@ function questionClick() {
         }
 
         questionNumber++;
-        if (questionNumber === questions.length) {
+        if (questionNumber === questionsEl.length) {
             quizEnd();
         } else {
             displayQuestion();
@@ -104,4 +102,32 @@ function quizEnd() {
     //  final score
     document.getElementById("final-score").innerHTML = score;
 }
+
+// submitting and storing initials and scores
+document.getElementById("submit").addEventListener("click", function() {
+    // getting initials and score
+    var initials = document.getElementById("initials").value;
+    var score = document.getElementById("final-score").innerHTML;
+
+    // highscore
+    var highscore = {
+        initials: initials,
+        score: score,
+    };
+    console.log(highscore);
+
+    var highscores = JSON.parse(localStorage.getItem('highscores')) || [];
+    highscores.push(highscore);
+    if (!highscores) {
+        highscores = [];
+    }
+    
+    highscores.push(highscore);
+    localStorage.setItem("highscores",JSON.stringify(highscores));
+    // localStorage.setItem('highscore', JSON.stringify(highscore));
+    }
+    );
+    
+    
+    
 
