@@ -57,16 +57,16 @@ function questionClick() {
                 time = 0;
             }
             timerEl.textContent = time;
-        
+
             feedbackEl.textContent = "WRONG!";
             console.log(feedbackEl.textContent);
         } else {
-           
+
             feedbackEl.textContent = "CORRECT!";
             console.log(feedbackEl.textContent);
 
         }
-      
+
         questionNumber++;
         if (questionNumber === questions.length) {
             quizEnd();
@@ -74,6 +74,17 @@ function questionClick() {
             displayQuestion();
         }
     }
+
+}
+
+function updateTimer() {
+    time--;
+    // timerEl.textContent = time;
+    if (time <= 0) {
+        time = 0;
+        quizEnd();
+    }
+    timerEl.textContent = time;
 
 
 }
