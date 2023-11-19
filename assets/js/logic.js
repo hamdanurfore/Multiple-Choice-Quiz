@@ -28,3 +28,20 @@ function startQuiz() {
 
     displayQuestion();
 }
+function displayQuestion() {
+    var currentQuestion = questions[questionNumber];
+    var titleEl = document.getElementById("question-title");
+    titleEl.textContent = currentQuestion.title;
+    choicesEl.innerHTML = ""; // clearing out old choices from previous question
+    // loop over choices
+    currentQuestion.choices.forEach(function (choice, i) {
+        var choiceBtn = document.createElement("button");
+        choiceBtn.setAttribute("class", "choice");
+        choiceBtn.setAttribute("value", choice);
+        choiceBtn.textContent = i + 1 + "." + choice;
+        choicesEl.appendChild(choiceBtn);
+        choiceBtn.onclick = questionClick;
+
+
+    })
+}
