@@ -45,3 +45,35 @@ function displayQuestion() {
 
     })
 }
+
+function questionClick() {
+    console.log(this.value);
+    if (questionNumber < questions.length) {
+
+        console.log(questions[questionNumber].answer);
+        if (this.value !== questions[questionNumber].answer) {
+            time -= 10;
+            if (time <= 0) {
+                time = 0;
+            }
+            timerEl.textContent = time;
+        
+            feedbackEl.textContent = "WRONG!";
+            console.log(feedbackEl.textContent);
+        } else {
+           
+            feedbackEl.textContent = "CORRECT!";
+            console.log(feedbackEl.textContent);
+
+        }
+      
+        questionNumber++;
+        if (questionNumber === questions.length) {
+            quizEnd();
+        } else {
+            displayQuestion();
+        }
+    }
+
+
+}
