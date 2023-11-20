@@ -41,9 +41,9 @@ cd Multiple-Choice-Quiz
 Open the index.html file in your web browser to view the webpage and try the quiz out!
 
 # Usage
-The console should present the following:
+The application should present the following:
 
-![screenshot of webpage](Screenshot-landing-page-quiz.png)
+![screenshot of webpage](assets/Screenshot-landing-page-quiz.png)
 
 # Contributing
 
