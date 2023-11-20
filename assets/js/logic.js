@@ -129,7 +129,7 @@ document.getElementById("submit").addEventListener("click", function () {
         highscores = [];
     }
 
-    highscores.push(highscore);
+   
     localStorage.setItem("highscores", JSON.stringify(highscores));
     window.location.href = "highscores.html";
     });
