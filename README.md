@@ -43,7 +43,7 @@ Open the index.html file in your web browser to view the webpage and try the qui
 # Usage
 The application should present the following:
 
-![screenshot of webpage](assets/Screenshot landing page quiz.png)
+![screenshot of webpage](assets/Screenshot-landing-page-quiz.png)
 
 # Contributing
 
