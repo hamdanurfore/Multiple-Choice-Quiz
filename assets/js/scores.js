@@ -18,7 +18,8 @@ function printHighscores() {
         var olEl = document.getElementById('highscores');
         olEl.appendChild(listItem);
 
-    }
+}
+
 }
 
 // Then have a function that will Clear High Scores from your local storage and reload your browser window
