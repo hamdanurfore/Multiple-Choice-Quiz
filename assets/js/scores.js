@@ -18,7 +18,7 @@ function printHighscores() {
         var olEl = document.getElementById('highscores');
         olEl.appendChild(listItem);
 
-}
+    }
 
 }
 

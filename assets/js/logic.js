@@ -118,7 +118,7 @@ document.getElementById("submit").addEventListener("click", function () {
     var highscore = {
         initials: initials,
         score: score,
-  
+
     };
     console.log(highscore);
     console.log(score);
@@ -129,10 +129,10 @@ document.getElementById("submit").addEventListener("click", function () {
         highscores = [];
     }
 
-   
+
     localStorage.setItem("highscores", JSON.stringify(highscores));
     window.location.href = "highscores.html";
-    });
+});
 
 
 
