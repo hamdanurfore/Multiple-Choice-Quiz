@@ -29,6 +29,7 @@ function startQuiz() {
     displayQuestion();
 }
 function displayQuestion() {
+    if (questionNumber < questions.length) {
     var currentQuestion = questions[questionNumber];
     var titleEl = document.getElementById("question-title");
     titleEl.textContent = currentQuestion.title;
@@ -41,7 +42,9 @@ function displayQuestion() {
         choiceBtn.textContent = i + 1 + "." + choice;
         choicesEl.appendChild(choiceBtn);
         choiceBtn.onclick = questionClick;
-    })
+        console.log("questionNumber =", questionNumber);
+        console.log("questions =", questions);
+    })}
 }
 
 function questionClick() {
