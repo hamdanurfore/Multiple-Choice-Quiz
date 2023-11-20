@@ -43,7 +43,7 @@ Open the index.html file in your web browser to view the webpage and try the qui
 # Usage
 The console should present the following:
 
-![screenshot of webpage](Screenshot-console.png)
+![screenshot of webpage](Screenshot-landing-page-quiz.png)
 
 # Contributing
 
